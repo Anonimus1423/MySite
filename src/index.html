@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<!-- Document Head Starts -->
+	@@include('html/components/head.html',
+	{
+		"title": "Главная",
+		"icon_image": "@img/site_icon/favicon.png",
+		"icon_image_type": "png"
+	})
+	<!-- Document Head Ends -->
+
+	<body>
+
+		<!-- Site Header Starts -->
+		@@include('html/header.html',{})
+		<!-- Site Header Ends -->
+
+
+		<!-- Main Site Content Starts -->
+		<main>
+			@@include('html/cover-page.html',{})
+		</main>
+		<!-- Main Site Content Ends -->
+
+		<!-- Site Footer Starts -->
+		@@include('html/footer.html',{})
+		<!-- Site Footer Ends -->
+
+		<script defer src="js/app.min.js"></script>
+	</body>
+</html>

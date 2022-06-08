@@ -1,0 +1,70 @@
+// Header Starts
+header, footer
+{
+    background-color: $_secondBackgroundColor;
+    padding-top: 30px;
+    .container
+    {
+        @include dfsb;
+        .navigation
+        {
+            .navigation__list
+            {
+                @include dfc;
+                .navigation__element
+                {
+                    margin-right: 40px;
+                    &:last-child
+                    {
+                        margin-right: 10px;
+                    }
+                    a
+                    {
+                        transition: 0.2s;
+                    }
+                    a:hover
+                    {
+                        color: $_secondTextColor;
+                    }
+                }
+            }
+        }
+        .contacts
+        {
+            .contacts__list
+            {
+                @include dfc;
+                .contact
+                {
+                    @include dfc;
+                    a
+                    {
+	                    font-size: 12px;
+	                    font-weight: 400;
+	                    color: $_contactTextColor;
+	                    font-style: normal;
+                    }
+                    &:first-child 
+                    {
+                        margin-right: 21.5px;
+                        img
+                        {
+                            width: 17.5px;
+                            margin-right: 10.75px;
+                        }
+                    }
+                    &:last-child img
+                    {
+                        width: 16px;
+                        margin-right: 11.5px;
+                    }
+                    &:hover a
+                    {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+}
+// Header Ends

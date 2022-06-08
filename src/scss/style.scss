@@ -1,0 +1,23 @@
+// Connect Fonts
+@import 'main_settings/fonts.scss';
+
+// Import Settings  
+@import 'variables/settings.scss';
+
+// Import Mixins
+@import 'main_settings/mixins.scss';
+
+// Reset default settings 
+@import 'main_settings/reset.scss';
+
+// Main settings 
+@import 'main_settings/main.scss';
+
+// Header and Footer Scss 
+@import 'site_sections/header-footer.scss';
+
+// Cover Page Scss 
+@import 'site_sections/cover-page.scss';
+
+
+
