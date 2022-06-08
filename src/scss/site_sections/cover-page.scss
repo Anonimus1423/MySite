@@ -13,16 +13,18 @@ section.cover-page
             {
 
             }
-            p
+            & > p
             {
+                width: 82%;
                 margin-top: 30px;
                 margin-bottom: 40px;
             }
             .buttons
             {
+                @include dfs;
                 button:first-child
                 {
-
+                    margin-right: 30px;
                 }
             }
         }

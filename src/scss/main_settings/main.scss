@@ -86,15 +86,22 @@ input, textarea
 }
 button
 {
-	font-size: 20px;
-	font-weight: 500;
-	line-height: 30px;
-	color: $_firstButtonTextColor;
+	display: inline-block;
 	padding: 25px 35px;
 	border-radius: 8px;
 	background-color: $_mainColor;
-	transition: 0.2s;
 	cursor: pointer;
+	transition: 0.2s;
+	position: relative;
+	overflow: hidden;
+	p
+	{
+		font-size: 20px;
+		font-weight: 500;
+		color: $_firstButtonTextColor;
+		position: relative;
+		z-index: 2;
+	}
 	&::before
 	{
 		content: "";
@@ -103,11 +110,29 @@ button
 		border-radius: 50%;
 		background-color: $_firstButtonHoverColor;
 		transition: 0.4s;
+		@include pac;
 	}
 	&:hover::before
 	{
-		width: 280px;
-		height: 80px;
+		width: 270px;
+		height: 270px;
+	}
+	&.second-type
+	{
+		background-color: $_secondColor;
+		p
+		{
+			color: $_secondTextColor;
+		}
+		&::before
+		{
+			background-color: $_secondButtonHoverColor;
+		}
+		&:hover::before
+		{
+			width: 245px;
+			height: 245px;
+		}
 	}
 }
 .container
