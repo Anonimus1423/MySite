@@ -16,13 +16,13 @@ section.cover-page
             & > p
             {
                 width: 82%;
-                margin-top: 30px;
+                margin-top: 25px;
                 margin-bottom: 40px;
             }
             .buttons
             {
                 @include dfs;
-                button:first-child
+                a:first-child
                 {
                     margin-right: 30px;
                 }
@@ -36,5 +36,163 @@ section.cover-page
                 max-width: none;
             }
         }
+    }
+}
+@media screen and (max-width: 1300px) and (min-width: 1150px) {
+    section.cover-page
+    {
+        padding-top: 66px;
+        padding-bottom: 86px;
+        .container
+        {
+            .cover-page__left
+            {
+                margin-right: 20px;
+                width: 100%;
+            }
+            .cover-page__right
+            {
+                img
+                {
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 1150px) {
+    section.cover-page .container .cover-page__left > p
+    {
+        width: 90%;
+        margin-top: 22px;
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    section.cover-page
+    {
+        padding-top: 60px;
+        .container
+        {
+            flex-direction: column;
+            text-align: center;
+            .cover-page__left
+            {
+                margin-right: 0;
+                h1
+                {
+                    width: 80%;
+                    margin: 0px auto;
+                }
+                & > p
+                {
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+                .buttons
+                {
+                    justify-content: center;
+                }
+            }
+            .cover-page__right
+            {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 930px) {
+    section.cover-page .container .cover-page__left h1
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 792px) {
+    section.cover-page .container .cover-page__left > p
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+    section.cover-page .container .cover-page__right
+    {
+        margin-top: 40px;
+    }
+    section.cover-page
+    {
+        padding-top: 45px;
+        padding-bottom: 50px;
+    }
+    section.cover-page .container .cover-page__left .buttons a:first-child
+    {
+        margin-right: 20px;
+    }
+    section.cover-page .container .cover-page__left > p
+    {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    section.cover-page .container .cover-page__right img
+    {
+        height: 380px;
+    }
+}
+@media screen and (max-width: 530px) {
+    section.cover-page .container .cover-page__right img
+    {
+        height: 310px;
+    }
+    section.cover-page .container .cover-page__right
+    {
+        margin-top: 35px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .buttons
+    {
+        display: inline-flex !important;        
+        flex-direction: column;
+        a:first-child
+        {
+            margin-bottom: 15px;
+            margin-right: 0 !important;
+        }
+        a:last-child
+        {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    section.cover-page .container .cover-page__right img
+    {
+        height: 270px;
+    }
+    section.cover-page .container .cover-page__right
+    {
+        margin-top: 30px;
+    }
+    section.cover-page .container .cover-page__left > p
+    {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .buttons
+    {
+        a.button:first-child
+        {
+            margin-bottom: 10px;
+        }
+    }
+    section.cover-page
+    {
+        padding-top: 35px;
+        padding-bottom: 40px;
+    }
+}
+@media screen and (max-width: 350px) {
+    section.cover-page .container .cover-page__right img
+    {
+        height: 240px;
     }
 }

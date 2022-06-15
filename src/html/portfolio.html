@@ -1,0 +1,32 @@
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <h2>Աշխատանքներ</h2>
+        <div class="portfolio__cards" id="slider2">
+            @@include("./components/portfolio_card.html", 
+            {
+                title: "Pense",
+                img: "portfolio_1.png",
+                description: "Ադապտիվ կայք` ինտեգրացումով Wordpress - ի վրա",
+                href: "https://sleepy-turing-45564c.netlify.app/"
+            })
+            @@include("./components/portfolio_card.html", 
+            {
+                title: "Influx",
+                img: "portfolio_2.png",
+                description: "Ադապտիվ կայք` ինտեգրացումով Wordpress - ի վրա",
+                href: "https://nervous-banach-d489fc.netlify.app"
+            })
+            @@include("./components/portfolio_card.html", 
+            {
+                title: "NigmaGame",
+                img: "portfolio_3.png",
+                description: "Կայք`խաղը ցուցադրելու համար",
+                href: "https://nigmagame.com/"
+            })
+        </div>
+        <div class="slider-controllers">
+            <img onclick="slideLeft('slider2')" src="@img/icons/icons.svg#arrow-right" alt="arrow icon"/>
+            <img onclick="slideRight('slider2')" src="@img/icons/icons.svg#arrow-right" alt="arrow icon"/>
+        </div>
+    </div>
+</section>

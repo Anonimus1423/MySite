@@ -5,33 +5,53 @@
                 Web<span>Team</span>
             </a>
         </div>
-        <nav class="navigation header__navigation">
+        <nav class="navigation header__navigation" id="navigation">
             <ul class="navigation__list">
                 <li class="navigation__element">
-                    <a href="#why-we">Ինչու՞ մենք</a>
+                    <a class="navigation__href" href="#why-we">Ինչու՞ մենք</a>
                 </li>
                 <li class="navigation__element">
-                    <a href="#technologies">Տեխնոլոգիաներ</a>
+                    <a class="navigation__href" href="#technologies">Տեխնոլոգիաներ</a>
                 </li>       
                 <li class="navigation__element">
-                    <a href="#services">Ծառայություններ</a>
+                    <a class="navigation__href" href="#services">Ծառայություններ</a>
                 </li>
                 <li class="navigation__element">
-                    <a href="#portfolio">Աշխատանքներ</a>
+                    <a class="navigation__href" href="#portfolio">Աշխատանքներ</a>
                 </li>
             </ul>
+            <address class="contacts header__contacts navigation__contacts">
+                <ol class="contacts__list">
+                    <li class="contact">
+                        <img src="@img/icons/icons.svg#phone" alt="phone icon"/>
+                        <a href="tel:+374 (98) 85-00-57">+374 (98) 85-00-57</a>
+                    </li>
+                    <li class="contact">
+                        <img src="@img/icons/icons.svg#mail" alt="mail icon"/>
+                        <a href="mailto:vaghinak_papoyan@mail.ru">vaghinak_papoyan@mail.ru</a>
+                    </li>
+                </ol>
+            </address>
         </nav>
-        <address class="contacts header__contacts">
-            <ol class="contacts__list">
-                <li class="contact">
-					<img src="@img/icons/icons.svg#phone" alt="phone icon"/>
-                    <a href="tel:+374 (98) 85-00-57">+374 (98) 85-00-57</a>
-                </li>
-                <li class="contact">
-					<img src="@img/icons/icons.svg#mail" alt="mail icon"/>
-                    <a href="mailto:vaghinak_papoyan@mail.ru">vaghinak_papoyan@mail.ru</a>
-                </li>
-            </ol>
-        </address>
+        <div class="header__right">
+            <address class="contacts header__contacts">
+                <ol class="contacts__list">
+                    <li class="contact">
+                        <img src="@img/icons/icons.svg#phone" alt="phone icon"/>
+                        <a href="tel:+37498850057">+374 (98) 85-00-57</a>
+                    </li>
+                    <li class="contact">
+                        <img src="@img/icons/icons.svg#mail" alt="mail icon"/>
+                        <a href="mailto:vaghinak_papoyan@mail.ru">vaghinak_papoyan@mail.ru</a>
+                    </li>
+                </ol>
+            </address>
+            <div onclick="dropdownOpen('dropdown-background', 'navigation', 'dropdown-icon')" class="dropdown-icon" id="dropdown-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div id="dropdown-background"  onclick="dropdownOpen('dropdown-background', 'navigation', 'dropdown-icon')" class="dropdown-background"></div>
     </div>
 </header>

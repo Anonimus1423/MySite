@@ -4,13 +4,14 @@
 	<!-- Document Head Starts -->
 	@@include('html/components/head.html',
 	{
-		"title": "Главная",
-		"icon_image": "@img/site_icon/favicon.png",
-		"icon_image_type": "png"
+		"title": "Կայքերի ստեղծում Հայաստանում | Մատչելի և որակյալ",
+		"icon_image": "@img/site_icon/favicon.ico",
+		"icon_image_type": "x-icon",
+		"description": "Առաջարկում ենք որակյալ կայքերի ստեղծում ՝ օգտագործելով ժամանակակից տեխնոլոգիաներ։ Մեր կայքերը ոչ միայն հարմար են և հասկանալի օգտագործման համար,այլև առանձնանում են իրենց տարբերվող ոճով։",
 	})
 	<!-- Document Head Ends -->
 
-	<body>
+	<body ondragstart="return false">
 
 		<!-- Site Header Starts -->
 		@@include('html/header.html',{})
@@ -20,6 +21,11 @@
 		<!-- Main Site Content Starts -->
 		<main>
 			@@include('html/cover-page.html',{})
+			@@include('html/why-we.html',{})
+			@@include('html/technologies.html',{})
+			@@include('html/services.html',{})
+			@@include('html/portfolio.html',{})
+			@@include('html/request.html',{})
 		</main>
 		<!-- Main Site Content Ends -->
 

@@ -1,0 +1,115 @@
+section.why-we
+{
+    .container
+    {
+        .why-we__cards
+        {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-wrap: wrap;
+            margin: 0 -25px;
+            .why-we__card
+            {
+                width: 33.33%;
+                min-width: 350px;
+                padding: 0 25px;
+                margin-top: 50px;
+                .icon
+                {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 12px;
+                    @include dfc;
+                    img
+                    {
+                        height: 24px;
+                    }
+                }
+                h3
+                {
+                    margin-top: 25px;
+                    margin-bottom: 15px;
+                }
+                &:nth-child(1) .icon
+                {
+                    background-color: $_whyWeIconColor1;
+                }
+                &:nth-child(2) .icon
+                {
+                    background-color: $_whyWeIconColor2;
+                }
+                &:nth-child(3) .icon
+                {
+                    background-color: $_whyWeIconColor3;
+                }
+                &:nth-child(4) .icon
+                {
+                    background-color: $_whyWeIconColor4;
+                }
+                &:nth-child(5) .icon
+                {
+                    background-color: $_whyWeIconColor5;
+                }
+                &:nth-child(6) .icon
+                {
+                    background-color: $_whyWeIconColor6;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1067px) 
+{
+    .why-we__card
+    {
+        width: 50% !important;
+        margin-top: 45px !important;
+        text-align: center;
+        .icon
+        {
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}
+@media screen and (max-width: 750px) 
+{
+    .why-we__cards
+    {
+        margin: 0;
+    }
+    .why-we__card
+    {
+        width: 80% !important;
+        margin-top: 40px !important;
+        min-width: 0 !important;
+    }
+    section.why-we .container .why-we__cards .why-we__card h3 {
+        margin-top: 21px;
+        margin-bottom: 12px;
+    }
+}
+@media screen and (max-width: 551px) 
+{
+    .why-we__card
+    {
+        width: 95% !important;
+        margin-top: 35px !important;  
+    }
+    section.why-we .container .why-we__cards .why-we__card h3 {
+        margin-top: 19px;
+        margin-bottom: 11px;
+    }
+}
+@media screen and (max-width: 400px) 
+{
+    .why-we__card
+    {
+        width: 100% !important;
+    }
+    section.why-we .container .why-we__cards .why-we__card h3 {
+        margin-top: 17px;
+        margin-bottom: 9px;
+    }
+}

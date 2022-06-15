@@ -3,7 +3,7 @@ import webpHtmlNosvg from "gulp-webp-html-nosvg";
 import versionNumber from "gulp-version-number";
 import htmlbeautify  from "gulp-html-beautify";
 // For HTML Minificator
-// import htmlmin from "gulp-htmlmin";
+import htmlmin from "gulp-htmlmin";
 //import pug from "gulp-pug";
 
 export const html = () => {
@@ -25,20 +25,20 @@ export const html = () => {
 		*/
 		.pipe(app.plugins.replace(/@img\//g, 'img/'))
 		// For HTML Minificator
-		// .pipe(
-		// 	app.plugins.if(
-		// 		app.isBuild,
-		// 		htmlmin({ collapseWhitespace: true })
-		// 	)
-		// )
-		
-		// Beautify HTML
 		.pipe(
 			app.plugins.if(
 				app.isBuild,
-				htmlbeautify({indentSize: 2})
+				htmlmin({ collapseWhitespace: true })
 			)
 		)
+		
+		// Beautify HTML
+		// .pipe(
+		// 	app.plugins.if(
+		// 		app.isBuild,
+		// 		htmlbeautify({indentSize: 2})
+		// 	)
+		// )
 		.pipe(
 			app.plugins.if(
 				app.isBuild,

@@ -1,0 +1,242 @@
+.request
+{
+    margin-top: 90px;
+    .container
+    {
+        @include dfsb;
+        .request__left
+        {
+            width: 505px;
+            h2
+            {
+                margin-top: 0;
+                text-align: left;
+                margin-bottom: 43px;
+                span
+                {
+                    display: block;
+                }
+            }
+            form
+            {
+                label
+                {
+                    display: block;
+                    margin-top: 30px;
+                    margin-bottom: 10px;
+                }
+                input, textarea
+                {
+                    display: block;
+                    width: 100%;
+                    transition: 0.2s;
+                    padding: 31px;
+                    border-radius: 8px;
+                    &:focus
+                    {
+                        outline: 1px solid $_mainColor !important;
+                        background-color: $_activeInputsBackgroundColor;
+                    }
+                }
+                textarea
+                {
+                    resize: none;
+                    height: 187px;
+                }
+                button
+                {
+                    display: block;
+                    width: 100%;
+                    margin-top: 30px;
+                    &:hover::before
+                    {
+                        width: 520px;
+                        height: 520px;
+                    }
+                }
+            }
+        }
+        .request__right
+        {
+            img
+            {
+                height: 838px;
+                width: auto !important;
+            }
+        }
+    }
+}
+.request .container .request__left form button:before
+{
+    transition: 0.5s !important;
+}
+@media screen and (max-width: 1200px) and (min-width: 1050px) {
+    .request
+    {
+        .container
+        {
+            .request__left
+            {
+                width: 405px;
+                h2
+                {
+                    margin-bottom: 35px;
+                }
+                form
+                {
+                    label
+                    {
+                        margin-top: 27px;
+                        margin-bottom: 9px;
+                    }
+                    input, textarea
+                    {
+                        padding: 25px;
+                    }
+                    textarea
+                    {
+                        height: 167px;
+                    }
+                }
+            }
+            .request__right
+            {
+                img
+                {
+                    height: 770px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1050px) {
+    .request
+    {
+        .container
+        {   
+            flex-direction: column;
+            h2
+            {
+                text-align: center !important;
+            }
+            .request__left
+            {
+                width: 80%;
+                form button:hover:before
+                {
+                    width: 75vw;
+                    height: 75vw;
+                }
+            }
+            .request__right
+            {
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px) 
+{
+    .request
+    {
+        .container
+        {
+            .request__left
+            {
+                width: 90%;
+                h2
+                {
+                    margin-bottom: 30px;
+                }
+                form
+                {
+                    label
+                    {
+                        margin-top: 25px;
+                        margin-bottom: 8px;
+                    }
+                    input, textarea
+                    {
+                        padding: 23px;
+                    }
+                    textarea
+                    {
+                        height: 160px;
+                    }
+                    button:hover:before
+                    {
+                        width: 85vw;
+                        height: 85vw;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 580px) 
+{
+    
+    .request
+    {
+        .container
+        {
+            .request__left
+            {
+                width: 100%;
+                form
+                {
+                    label
+                    {
+                        margin-top: 22px;
+                        margin-bottom: 7px;
+                    }
+                    input, textarea
+                    {
+                        padding: 20px;
+                    }
+                    textarea
+                    {
+                        height: 150px;
+                    }
+                    button
+                    {
+                        margin-top: 22px;
+                    }
+                    button:hover:before
+                    {
+                        width: 92vw;
+                        height: 92vw;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 930px)
+{
+    .request
+    {
+        margin-top: 75px;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .request
+    {
+        margin-top: 65px;
+    }
+}
+@media screen and (max-width: 530px)
+{
+    .request
+    {
+        margin-top: 55px;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    .request
+    {
+        margin-top: 40px;
+    }
+}

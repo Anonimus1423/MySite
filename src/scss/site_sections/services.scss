@@ -1,0 +1,213 @@
+section.services
+{
+    margin-top: 105px;
+    padding: 90px 0;
+    .container
+    {
+        @include dfsb;
+        .service__left
+        {
+            h2
+            {
+                margin-top: 0;
+                margin-bottom: 50px;
+                text-align: start;
+            }
+            ol
+            {
+                li
+                {
+                    margin-top: 15px;
+                    display: flex;
+                    justify-content: start;
+                    align-items: start;
+                    &::before
+                    {
+                        content: "";
+                        display: inline-block;
+                        margin-right: 20px;
+                        margin-top: 8px;
+                        min-width: 10px;
+                        width: 10px;
+                        height: 10px;
+                        background-color: $_mainColor;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+        .service__right
+        {
+            img
+            {
+                height: 520px;
+                max-width: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) 
+{
+    section.services
+    {
+        margin-top: 95px;
+        padding: 80px 0;
+        .container
+        {
+            .service__left
+            {
+                h2
+                {
+                    margin-bottom: 45px;
+                }
+                ol
+                {
+                    li
+                    {
+                        margin-top: 14px;
+                    }
+                }
+            }
+            .service__right
+            {
+                img
+                {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 880px) {
+    section.services
+    {
+        margin-top: 75px;
+        padding: 70px 0;
+        .container
+        {
+            flex-direction: column;
+            .service__left
+            {
+                display: inline-block;
+                h2
+                {
+                    margin-bottom: 30px;
+                }
+                ol
+                {
+                    display: inline-block;
+                    @include prc;
+                }
+            }
+            .service__right
+            {
+                margin-top: 45px;
+                img
+                {
+                    height: auto;
+                    width: 90%;
+                    margin: 0px auto;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px) 
+{
+    section.services
+    {
+        margin-top: 65px;
+        padding: 60px 0;
+        .container
+        {
+            .service__left
+            {
+                h2
+                {
+                    margin-bottom: 25px;
+                }
+                ol
+                {
+                    li
+                    {
+                        margin-top: 12px;
+                        &::before
+                        {
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+            .service__right
+            {
+                margin-top: 35px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 530px) {
+    
+    section.services
+    {
+        margin-top: 60px;
+        padding: 45px 0;
+        .container
+        {
+            .service__left
+            {
+                h2
+                {
+                    margin-bottom: 10px;
+                }
+                ol
+                {
+                    li
+                    {
+                        margin-top: 10px;
+                        &::before
+                        {
+                            margin-top: 6px;
+                            margin-right: 12px;
+                            min-width: 7px;
+                            width: 7px;
+                            height: 7px;
+                        }
+                    }
+                }
+            }
+            .service__right
+            {
+                img
+                {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    
+    section.services
+    {
+        margin-top: 55px;
+        padding: 40px 0;
+        .container
+        {
+            .service__left
+            {
+                h2
+                {
+                    margin-bottom: 10px;
+                }
+                ol
+                {
+                    li
+                    {
+                        margin-top: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
